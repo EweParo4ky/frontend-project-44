@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Text project on hexlet",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "main": "index.js","scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EweParo4ky/frontend-project-44.git"
+  },
+  "author": "EweParo4ky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EweParo4ky/frontend-project-44/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/EweParo4ky/frontend-project-44#readme"
+}
