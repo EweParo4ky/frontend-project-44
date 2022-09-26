@@ -5,7 +5,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
-  "main": "index.js","scripts": {
+  "main": "index.js",
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
     "url": "https://github.com/EweParo4ky/frontend-project-44/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/EweParo4ky/frontend-project-44#readme"
+  "homepage": "https://github.com/EweParo4ky/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
