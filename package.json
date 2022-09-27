@@ -22,5 +22,9 @@
   "homepage": "https://github.com/EweParo4ky/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1"
   }
 }

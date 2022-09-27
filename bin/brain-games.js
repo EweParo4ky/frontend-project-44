@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import question from "../src/cli.js";
+import question from '../src/cli.js';
 
-question()
+question();
