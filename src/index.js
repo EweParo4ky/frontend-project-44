@@ -1,30 +1,25 @@
 import readlineSync from 'readline-sync';
 
-function greetings() {
+const countOfRounds = 3;
+
+export default function gameEngine(description, round) {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${userName}!`);
-  return userName;
-}
+  console.log(description);
 
-function randomNumber() {
-  const number1 = Math.floor(Math.random() * 100) + 1;
-  return number1;
-}
+  for (let i = 0; i < countOfRounds; i += 1) {
+    const [question, answer] = round();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
-function gcdTwoNumbers(number1, number2) {
-  if (typeof number1 !== 'number' || typeof number2 !== 'number') {
-    return false;
+    if (answer !== userAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. Let's try again, ${userName}!`);
+      return;
+    }
+
+    console.log('Correct!');
   }
-  let a = Math.abs(number1);
-  let b = Math.abs(number2);
-  while (b) {
-    const t = b;
-    b = a % b;
-    a = t;
-  }
-  return a;
+  console.log(`Congratulations, ${userName}!`);
 }
-
-export { greetings, randomNumber, gcdTwoNumbers };

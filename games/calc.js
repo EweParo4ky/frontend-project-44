@@ -1,38 +1,37 @@
-import readlineSync from 'readline-sync';
+import { randomNumber } from '../src/utilities.js';
 
-import { greetings, randomNumber } from '../src/index.js';
+import gameEngine from '../src/index.js';
+
+const description = 'What is the result of the expression?';
+function calculator(number1, number2, operator) {
+  if (operator === '+') {
+    return number1 + number2;
+  }
+  if (operator === '-') {
+    return number1 - number2;
+  }
+  if (operator === '*') {
+    return number1 * number2;
+  }
+  return 'undefined operator';
+}
+
+function round() {
+  const number1 = randomNumber();
+  const number2 = randomNumber();
+  const mathSigns = ['+', '-', '*'];
+  const randomIndex = Math.floor(Math.random() * mathSigns.length);
+  const operator = mathSigns[randomIndex];
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = String(calculator(number1, number2, operator));
+  return [question, answer];
+}
 
 export default function gameCalc() {
-  const userName = greetings();
-  console.log('What is the result of the expression?');
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = randomNumber();
-    const number2 = randomNumber();
-    const mathSigns = ['+', '-', '*'];
-    const randomIndex = Math.floor(Math.random() * mathSigns.length);
-    const operator = mathSigns[randomIndex];
-    let result = 0;
-    if (operator === '+') {
-      result = number1 + number2;
-    }
-    if (operator === '-') {
-      result = number1 - number2;
-    }
-    if (operator === '*') {
-      result = number1 * number2;
-    }
-    const expression = `${number1} ${operator} ${number2}`;
+  gameEngine(description, round);
+}
+
+/* const expression = `${number1} ${operator} ${number2}`;
     console.log(`Question: ${expression}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === String(result)) {
-      console.log('Correct!');
-    }
-    if (answer !== String(result)) {
-      console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`,
-      );
-      break;
-    }
-    console.log('Congratulations,', userName, '!');
-  }
-}
+    if (answer === String(result)) */

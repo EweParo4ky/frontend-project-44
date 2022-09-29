@@ -1,33 +1,15 @@
-import readlineSync from 'readline-sync';
+import { randomNumber } from '../src/utilities.js';
+import gameEngine from '../src/index.js';
 
-import { greetings, randomNumber } from '../src/index.js';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export default function evenGame() {
-  const userName = greetings();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const number = randomNumber();
-    console.log(`Question: ${number}`);
-    const answer = readlineSync.question('Your answer: ');
+function round() {
+  const number1 = randomNumber();
+  const question = number1;
+  const answer = number1 % 2 === 0 ? 'yes' : 'no';
+  return [question, answer];
+}
 
-    if (answer === 'yes' && number % 2 === 0) {
-      console.log('Correct!');
-    }
-    if (answer === 'no' && number % 2 !== 0) {
-      console.log('Correct!');
-    }
-    if (answer !== 'no' && number % 2 !== 0) {
-      console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`,
-      );
-      break;
-    }
-    if (answer !== 'yes' && number % 2 === 0) {
-      console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`,
-      );
-      break;
-    }
-    console.log('Congratulations,', userName, '!');
-  }
+export default function gameEven() {
+  gameEngine(description, round);
 }
