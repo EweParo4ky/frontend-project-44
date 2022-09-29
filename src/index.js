@@ -13,4 +13,18 @@ function randomNumber() {
   return number1;
 }
 
-export { greetings, randomNumber };
+function gcdTwoNumbers(number1, number2) {
+  if (typeof number1 !== 'number' || typeof number2 !== 'number') {
+    return false;
+  }
+  let a = Math.abs(number1);
+  let b = Math.abs(number2);
+  while (b) {
+    const t = b;
+    b = a % b;
+    a = t;
+  }
+  return a;
+}
+
+export { greetings, randomNumber, gcdTwoNumbers };
