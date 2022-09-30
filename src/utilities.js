@@ -17,4 +17,8 @@ function gcdTwoNumbers(number1, number2) {
   return a;
 }
 
-export { randomNumber, gcdTwoNumbers };
+function getRandomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+export { randomNumber, gcdTwoNumbers, getRandomInRange };
