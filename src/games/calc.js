@@ -1,6 +1,6 @@
-import { randomNumber } from '../src/utilities.js';
+import { getRandomNumber } from '../utilities.js';
 
-import gameEngine from '../src/index.js';
+import gameEngine from '../index.js';
 
 const description = 'What is the result of the expression?';
 function calculator(number1, number2, operator) {
@@ -16,22 +16,17 @@ function calculator(number1, number2, operator) {
   return 'undefined operator';
 }
 
-function round() {
-  const number1 = randomNumber();
-  const number2 = randomNumber();
+function generateRound() {
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
   const mathSigns = ['+', '-', '*'];
   const randomIndex = Math.floor(Math.random() * mathSigns.length);
   const operator = mathSigns[randomIndex];
   const question = `${number1} ${operator} ${number2}`;
-  const answer = String(calculator(number1, number2, operator));
-  return [question, answer];
+  const correctAnswer = String(calculator(number1, number2, operator));
+  return [question, correctAnswer];
 }
 
 export default function gameCalc() {
-  gameEngine(description, round);
+  gameEngine(description, generateRound);
 }
-
-/* const expression = `${number1} ${operator} ${number2}`;
-    console.log(`Question: ${expression}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer === String(result)) */

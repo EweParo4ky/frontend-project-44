@@ -1,6 +1,6 @@
-import gameEngine from '../src/index.js';
+import gameEngine from '../index.js';
 
-import { randomNumber } from '../src/utilities.js';
+import { getRandomNumber } from '../utilities.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -13,19 +13,19 @@ function IsPrimeNumber(number1) {
   return true;
 }
 
-function round() {
-  const question = randomNumber();
-  let answer = '';
+function generateRound() {
+  const question = getRandomNumber();
+  let correctAnswer = '';
   const result = IsPrimeNumber(question);
   if (result === true) {
-    answer = 'yes';
+    correctAnswer = 'yes';
   }
   if (result !== true) {
-    answer = 'no';
+    correctAnswer = 'no';
   }
-  return [question, answer];
+  return [question, correctAnswer];
 }
 
 export default function gameIsPrimeNumber() {
-  gameEngine(description, round);
+  gameEngine(description, generateRound);
 }

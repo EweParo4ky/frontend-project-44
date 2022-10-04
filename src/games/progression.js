@@ -1,14 +1,14 @@
-import gameEngine from '../src/index.js';
+import gameEngine from '../index.js';
 
-import { randomNumber, getRandomInRange } from '../src/utilities.js';
+import { getRandomNumber, getRandomInRange } from '../utilities.js';
 
 const description = 'What number is missing in the progression?';
 const minLengthProgression = 5;
 const maxLengthProgression = 10;
 
-function round() {
-  const stepOfprog = randomNumber();
-  const firstElem = randomNumber();
+function generateRound() {
+  const stepOfprog = getRandomNumber();
+  const firstElem = getRandomNumber();
   const lengthOfProg = getRandomInRange(minLengthProgression, maxLengthProgression);
   const randomIndex = getRandomInRange(0, lengthOfProg - 1);
   let question = '';
@@ -21,10 +21,11 @@ function round() {
       question = `${question} ${'..'}`;
     }
   }
-  const answer = String(firstElem + stepOfprog * randomIndex);
-  return [question, answer];
+  question = question.trim();
+  const correctAnswer = String(firstElem + stepOfprog * randomIndex);
+  return [question, correctAnswer];
 }
 
 export default function gameProgression() {
-  gameEngine(description, round);
+  gameEngine(description, generateRound);
 }
