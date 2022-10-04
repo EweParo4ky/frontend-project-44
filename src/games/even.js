@@ -10,6 +10,6 @@ function generateRound() {
   return [question, correctAnswer];
 }
 
-export default function gameEven() {
+export default function startGameEven() {
   gameEngine(description, generateRound);
 }

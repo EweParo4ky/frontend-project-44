@@ -18,7 +18,7 @@ function generateRound() {
       question = `${question} ${nextElem}`;
     }
     if (i === randomIndex) {
-      question = `${question} ${'..'}`;
+      question = `${question} ..`;
     }
   }
   question = question.trim();
@@ -26,6 +26,6 @@ function generateRound() {
   return [question, correctAnswer];
 }
 
-export default function gameProgression() {
+export default function startGameProgression() {
   gameEngine(description, generateRound);
 }

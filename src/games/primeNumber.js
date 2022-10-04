@@ -26,6 +26,6 @@ function generateRound() {
   return [question, correctAnswer];
 }
 
-export default function gameIsPrimeNumber() {
+export default function startGameIsPrimeNumber() {
   gameEngine(description, generateRound);
 }

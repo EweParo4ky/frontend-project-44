@@ -3,17 +3,17 @@ import { getRandomNumber } from '../utilities.js';
 import gameEngine from '../index.js';
 
 const description = 'What is the result of the expression?';
-function calculator(number1, number2, operator) {
-  if (operator === '+') {
-    return number1 + number2;
+function calculate(number1, number2, operator) {
+  switch (operator) {
+    case '-':
+      return number1 - number2;
+    case '+':
+      return number1 + number2;
+    case '*':
+      return number1 * number2;
+    default:
+      return 'undefined operator';
   }
-  if (operator === '-') {
-    return number1 - number2;
-  }
-  if (operator === '*') {
-    return number1 * number2;
-  }
-  return 'undefined operator';
 }
 
 function generateRound() {
@@ -23,10 +23,10 @@ function generateRound() {
   const randomIndex = Math.floor(Math.random() * mathSigns.length);
   const operator = mathSigns[randomIndex];
   const question = `${number1} ${operator} ${number2}`;
-  const correctAnswer = String(calculator(number1, number2, operator));
+  const correctAnswer = String(calculate(number1, number2, operator));
   return [question, correctAnswer];
 }
 
-export default function gameCalc() {
+export default function startGameCalc() {
   gameEngine(description, generateRound);
 }

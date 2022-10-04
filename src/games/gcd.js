@@ -12,6 +12,6 @@ function generateRound() {
   return [question, correctAnswer];
 }
 
-export default function gameGcd() {
+export default function startGameGcd() {
   gameEngine(description, generateRound);
 }
