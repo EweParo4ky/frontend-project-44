@@ -1,6 +1,6 @@
-import { getRandomNumber } from '../src/utilities.js';
+import { getRandomNumber } from '../utilities.js';
 
-import gameEngine from '../src/index.js';
+import gameEngine from '../index.js';
 
 const description = 'What is the result of the expression?';
 function calculate(number1, number2, operator) {
