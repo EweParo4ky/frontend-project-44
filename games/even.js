@@ -1,7 +1,7 @@
-import { getRandomNumber } from '../utilities.js';
-import gameEngine from '../index.js';
+import { getRandomNumber } from '../src/utilities.js';
+import gameEngine from '../src/index.js';
 
-const description = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function generateRound() {
   const number1 = getRandomNumber();

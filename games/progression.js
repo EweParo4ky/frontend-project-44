@@ -1,6 +1,6 @@
-import gameEngine from '../index.js';
+import gameEngine from '../src/index.js';
 
-import { getRandomNumber, getRandomInRange } from '../utilities.js';
+import { getRandomNumber, getRandomInRange } from '../src/utilities.js';
 
 const description = 'What number is missing in the progression?';
 const minLengthProgression = 5;
