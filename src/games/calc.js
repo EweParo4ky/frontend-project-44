@@ -1,6 +1,6 @@
 import { getRandomNumber } from '../utilities.js';
 
-import gameEngine from '../index.js';
+import startGameEngine from '../index.js';
 
 const description = 'What is the result of the expression?';
 function calculate(number1, number2, operator) {
@@ -28,5 +28,5 @@ function generateRound() {
 }
 
 export default function startGameCalc() {
-  gameEngine(description, generateRound);
+  startGameEngine(description, generateRound);
 }

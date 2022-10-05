@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import startGameEngine from '../index.js';
 
 import { getRandomNumber, getRandomInRange } from '../utilities.js';
 
@@ -27,5 +27,5 @@ function generateRound() {
 }
 
 export default function startGameProgression() {
-  gameEngine(description, generateRound);
+  startGameEngine(description, generateRound);
 }

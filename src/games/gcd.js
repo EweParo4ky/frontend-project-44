@@ -1,6 +1,6 @@
 import { getRandomNumber, getGcdTwoNumbers } from '../utilities.js';
 
-import gameEngine from '../index.js';
+import startGameEngine from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -13,5 +13,5 @@ function generateRound() {
 }
 
 export default function startGameGcd() {
-  gameEngine(description, generateRound);
+  startGameEngine(description, generateRound);
 }
