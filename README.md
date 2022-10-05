@@ -18,10 +18,6 @@
     </p>
 <p><b>Install:<p>$ git clone git@github.com:EweParo4ky/frontend-project-44.git</p></p>
 <a href="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ" target="_blank"><img src="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ.svg" /></a>
-<h2>Hexlet tests and linter status:</h2>
-
-[![Actions Status](https://github.com/EweParo4ky/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/EweParo4ky/frontend-project-44/actions)
-<a href="https://codeclimate.com/github/EweParo4ky/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7c314e2b46d5213b9f0f/maintainability" /></a>
 <h2>Asciinemas</h2>
 <p><b>Brain-even</p>
 <a href="https://asciinema.org/a/dErsx96m2mNC8R5SqPXzKLh4m" target="_blank"><img src="https://asciinema.org/a/dErsx96m2mNC8R5SqPXzKLh4m.svg" /></a>
