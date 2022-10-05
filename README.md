@@ -6,6 +6,7 @@
   <li>Brain-progression</li>
   <li>Brain-prime</li>
 </ol>
+<p> Requirements: Node v17.6 or higher.
 <h2>Hexlet tests and linter status:</h2>
 
 [![Actions Status](https://github.com/EweParo4ky/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/EweParo4ky/frontend-project-44/actions)
