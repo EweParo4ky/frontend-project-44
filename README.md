@@ -1,7 +1,7 @@
 <h1>Hexlet-frontend project: Mind games.</h1>
 <p> Pack of 5 games for linux</p>
 <ol><li>Brain-even</li>
-  <li>Brain-calc</li
+  <li>Brain-calc</li>
   <li>Brain-gcd</li>
   <li>Brain-progression</li>
   <li>Brain-prime</li>
