@@ -7,7 +7,7 @@
   <li>Brain-prime</li>
 </ol>
 <p><b> Requirements:</b><p>Mac/linux</p><p> Node v17.6 or higher</p></p>
-<p><b>Install: git clone git@github.com:EweParo4ky/frontend-project-44.git</p>
+<p><b>Install:$ git clone git@github.com:EweParo4ky/frontend-project-44.git</p>
 <a href="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ" target="_blank"><img src="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ.svg" /></a>
 <h2>Hexlet tests and linter status:</h2>
 
