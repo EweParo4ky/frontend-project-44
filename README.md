@@ -1,6 +1,11 @@
 <h1>Hexlet-frontend project: Mind games.</h1>
 <p> Pack of 5 games for linux</p>
-<ol><li>Brain-even</li></ol>
+<ol><li>Brain-even</li>
+  <li>Brain-calc</li
+  <li>Brain-gcd</li>
+  <li>Brain-progression</li>
+  <li>Brain-prime</li>
+</ol>
 <h2>Hexlet tests and linter status:</h2>
 
 [![Actions Status](https://github.com/EweParo4ky/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/EweParo4ky/frontend-project-44/actions)
