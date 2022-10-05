@@ -6,7 +6,7 @@
   <li>Brain-progression</li>
   <li>Brain-prime</li>
 </ol>
-<p><b> Requirements:</b><p>Mac/linux</p><p> Node v17.6 or higher</p>.</p>
+<p><b> Requirements:</b><p>Mac/linux</p><p> Node v17.6 or higher</p></p>
 <p>Install</p>
 <a href="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ" target="_blank"><img src="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ.svg" /></a>
 <h2>Hexlet tests and linter status:</h2>
