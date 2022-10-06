@@ -16,7 +16,10 @@
     <li><b>Node v17.6 or higher</li>
   </ul>
     </p>
-<p><b>Install:<p>$ git clone git@github.com:EweParo4ky/frontend-project-44.git</p></p>
+<p><b>Install:<p>$ git clone git@github.com:EweParo4ky/frontend-project-44.git</p>
+<p>$ cd frontend-project-44</p>
+<p>$ make install</p>
+</p>
 <a href="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ" target="_blank"><img src="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ.svg" /></a>
 <h2>Asciinemas</h2>
 <p><b>Brain-even</p>
