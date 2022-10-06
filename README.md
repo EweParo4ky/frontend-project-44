@@ -20,7 +20,7 @@
 <p>$ cd frontend-project-44</p>
 <p>$ make install</p>
 </p>
-<a href="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ" target="_blank"><img src="https://asciinema.org/a/jQvOOEDnwqd4dYllNHwDp1YUQ.svg" /></a>
+<a href="https://asciinema.org/a/8ktclRf33XdWwhTPtRQoQaH6X" target="_blank"><img src="https://asciinema.org/a/8ktclRf33XdWwhTPtRQoQaH6X.svg" /></a>
 <h2>Asciinemas</h2>
 <p><b>Brain-even</p>
 <a href="https://asciinema.org/a/dErsx96m2mNC8R5SqPXzKLh4m" target="_blank"><img src="https://asciinema.org/a/dErsx96m2mNC8R5SqPXzKLh4m.svg" /></a>
