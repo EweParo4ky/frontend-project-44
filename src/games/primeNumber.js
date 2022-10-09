@@ -4,9 +4,12 @@ import { getRandomNumber } from '../utilities.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrimeNumber(number1) {
-  for (let i = 2; i < number1; i += 1) {
-    if (number1 % i === 0) {
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
       return false;
     }
   }
@@ -15,7 +18,7 @@ function isPrimeNumber(number1) {
 
 function generateRound() {
   const question = getRandomNumber();
-  const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 }
 
